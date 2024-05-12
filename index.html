@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment7</title>
+    <style>
+        button{
+            width: 80px;
+            height: 50px;
+            border: 1px solid black;
+            border-radius: 10px;
+            background-color: aqua;
+            font-size: 20px;
+            color: white;
+            animation-name: move;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        @keyframes move{
+            0%{
+                transform : translate(0px) rotate(0deg);
+            }
+            50%{
+                transform: translate(500px) rotate(360deg);
+                background-color: blueviolet;
+            }
+            100%{
+                transform: translate(0px) rotate(0deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello This is a testing for Animation</h1>
+    <button>Card</button>
+</body>
+</html>
